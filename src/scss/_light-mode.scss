@@ -1,0 +1,13 @@
+body.light-mode {
+  background-color:$bg-white-color;
+
+  button {
+    background-color: $bg-black-color;
+    color: $bg-white-color;
+  }
+  
+  .clock {
+    color: $text-shadow-color;
+    text-shadow: none;
+  }
+}

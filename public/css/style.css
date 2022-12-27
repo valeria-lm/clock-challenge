@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+body {
+  background-color: #0c0c0c;
+  box-sizing: border-box;
+  /* 1rem = 10px */
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.container {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(50%, 30rem);
+  height: 6rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+.container .clock {
+  font-size: clamp(2rem, 8vw, 5rem);
+  font-family: "PT Mono", monospace;
+}
+
+body.dark-mode {
+  background-color: #0c0c0c;
+  color: #f2f2f2;
+}
+body.dark-mode button {
+  background-color: #f2f2f2;
+  color: #0c0c0c;
+}
+body.dark-mode .clock {
+  color: #f2f2f2;
+  text-shadow: 1px 1px 18px #2d9fa3, 1px 1px 18px #2d9fa3, 1px 1px 18px #2d9fa3;
+}
+
+body.light-mode {
+  background-color: #f2f2f2;
+}
+body.light-mode button {
+  background-color: #161616;
+  color: #f2f2f2;
+}
+body.light-mode .clock {
+  color: #2d9fa3;
+  text-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */
