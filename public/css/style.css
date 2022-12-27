@@ -5,13 +5,6 @@ body {
   /* 1rem = 10px */
 }
 
-button {
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  cursor: pointer;
-}
-
 .container {
   margin: auto;
   position: absolute;
@@ -32,6 +25,66 @@ button {
   font-family: "PT Mono", monospace;
 }
 
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch input:checked + .slider {
+  background-color: #202020;
+}
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #202020;
+}
+.switch input:checked + .slider:before {
+  transform: translateX(-1.4rem);
+  background: linear-gradient(#dbc602, #e2dca3);
+}
+.switch input:checked + .slider::after {
+  left: 25%;
+  background-color: #202020;
+}
+.switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ebebeb;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.switch .slider:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.3rem;
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  background: linear-gradient(#dbc602, #db8f02);
+  transition: 0.4s;
+}
+.switch .slider::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 100%;
+  background-color: #ebebeb;
+  transition: ease 0.4s;
+}
+
 body.dark-mode {
   background-color: #0c0c0c;
   color: #f2f2f2;
@@ -42,19 +95,19 @@ body.dark-mode button {
 }
 body.dark-mode .clock {
   color: #f2f2f2;
-  text-shadow: 1px 1px 18px #2d9fa3, 1px 1px 18px #2d9fa3, 1px 1px 18px #2d9fa3;
+  text-shadow: -4px -4px 12px rgb(58, 58, 58), 4px 4px 12px rgb(58, 58, 58), 4px 4px 12px rgb(58, 58, 58), 4px 4px 12px rgb(58, 58, 58);
 }
 
 body.light-mode {
-  background-color: #f2f2f2;
+  background-color: #ebebeb;
 }
 body.light-mode button {
-  background-color: #161616;
-  color: #f2f2f2;
+  background-color: #202020;
+  color: #ebebeb;
 }
 body.light-mode .clock {
-  color: #2d9fa3;
-  text-shadow: none;
+  color: #202020;
+  text-shadow: -4px -4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172);
 }
 
 /*# sourceMappingURL=style.css.map */

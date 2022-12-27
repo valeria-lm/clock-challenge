@@ -8,7 +8,10 @@
     <title>Clock Challenge</title>
   </head>
   <body id="body" class="dark-mode">
-    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Color mode</button>
+    <label class="switch">
+      <input type="checkbox" name="dark_light" onclick="toggleColorMode()" title="Toggle dark/light mode">
+      <span class="slider"></span>
+    </label>
     <div class="container">
       <h1 class="clock"></h1>
     </div>

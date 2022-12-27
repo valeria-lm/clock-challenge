@@ -7,7 +7,8 @@ body.light-mode {
   }
   
   .clock {
-    color: $text-shadow-color;
-    text-shadow: none;
+    color: $bg-black-color;
+    text-shadow: -4px -4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172),
+    4px 4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172);
   }
 }
