@@ -88,6 +88,7 @@ body {
 body.dark-mode {
   background-color: #0c0c0c;
   color: #f2f2f2;
+  transition: 1s all;
 }
 body.dark-mode button {
   background-color: #f2f2f2;
@@ -95,11 +96,12 @@ body.dark-mode button {
 }
 body.dark-mode .clock {
   color: #f2f2f2;
-  text-shadow: -4px -4px 12px rgb(58, 58, 58), 4px 4px 12px rgb(58, 58, 58), 4px 4px 12px rgb(58, 58, 58), 4px 4px 12px rgb(58, 58, 58);
+  text-shadow: 4px -2px 48px rgba(255, 255, 255, 0.5);
 }
 
 body.light-mode {
   background-color: #ebebeb;
+  transition: 1s all;
 }
 body.light-mode button {
   background-color: #202020;
@@ -107,7 +109,7 @@ body.light-mode button {
 }
 body.light-mode .clock {
   color: #202020;
-  text-shadow: -4px -4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172), 4px 4px 12px rgb(172, 172, 172);
+  text-shadow: 4px -2px 48px rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
