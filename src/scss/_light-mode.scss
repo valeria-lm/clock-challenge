@@ -1,12 +1,16 @@
 body.light-mode {
-  background-color:$bg-white-color;
+  background-color: $bg-white-color;
   transition: 1s all;
 
+  .container {
+    background: $bg-white-color;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+  }
   button {
     background-color: $bg-black-color;
     color: $bg-white-color;
   }
-  
+
   .clock {
     color: $bg-black-color;
     text-shadow: 4px -2px 48px rgba(0, 0, 0);

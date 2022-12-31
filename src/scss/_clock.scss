@@ -15,6 +15,6 @@
 
   .clock {
     font-size: clamp(2rem, 8vw, 5rem);
-    font-family: "PT Mono", monospace;
+    font-family: $principal-font-clock;
   }
 }

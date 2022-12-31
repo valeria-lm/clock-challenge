@@ -1,11 +1,15 @@
 body.dark-mode {
-  background-color: #0c0c0c;
+  background-color: $bg-black-color;
   color: #f2f2f2;
   transition: 1s all;
-
+  
+  .container {
+    background: $bg-black-color;
+    box-shadow: 10px 10px 20px #3a3a3a, -10px -10px 20px #000000;
+  }
   button {
     background-color: #f2f2f2;
-    color: #0c0c0c;
+    color: $bg-black-color;
   }
 
   .clock {
