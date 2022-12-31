@@ -1,6 +1,6 @@
 body.dark-mode {
   background-color: $bg-black-color;
-  color: #f2f2f2;
+  color: $bg-white-color;
   transition: 1s all;
   
   .container {
@@ -8,12 +8,12 @@ body.dark-mode {
     box-shadow: 10px 10px 20px #3a3a3a, -10px -10px 20px #000000;
   }
   button {
-    background-color: #f2f2f2;
+    background-color: $bg-white-color;
     color: $bg-black-color;
   }
 
   .clock {
-    color: #f2f2f2;
+    color: $bg-white-color;
     text-shadow: 4px -2px 48px rgba(255, 255, 255, 0.5);
   }
 }
